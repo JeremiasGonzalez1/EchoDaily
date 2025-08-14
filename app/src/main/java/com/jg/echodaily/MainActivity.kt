@@ -14,8 +14,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
-import com.jg.echodaily.core.presentation.theme.EchoDailyTheme
-import com.jg.echodaily.core.presentation.theme.bgGradient
+import com.jg.echodaily.core.presentation.desingsystem.theme.EchoDailyTheme
+import com.jg.echodaily.core.presentation.desingsystem.theme.bgGradient
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,4 +1,4 @@
-package com.jg.echodaily.core.presentation.chips
+package com.jg.echodaily.core.presentation.desingsystem.chips
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -17,8 +17,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.jg.echodaily.core.presentation.theme.EchoDailyTheme
-import com.jg.echodaily.core.presentation.theme.Gray6
+import com.jg.echodaily.core.presentation.desingsystem.theme.EchoDailyTheme
+import com.jg.echodaily.core.presentation.desingsystem.theme.Gray6
 
 @Composable
 fun HashTagChip(

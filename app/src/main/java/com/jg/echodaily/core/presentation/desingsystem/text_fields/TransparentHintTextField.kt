@@ -1,4 +1,4 @@
-package com.jg.echodaily.core.presentation.text_fields
+package com.jg.echodaily.core.presentation.desingsystem.text_fields
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.text.BasicTextField
@@ -12,7 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.tooling.preview.Preview
-import com.jg.echodaily.core.presentation.theme.EchoDailyTheme
+import com.jg.echodaily.core.presentation.desingsystem.theme.EchoDailyTheme
 
 @Composable
 fun TransparentHintTextField(

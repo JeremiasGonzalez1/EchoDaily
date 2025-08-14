@@ -1,4 +1,4 @@
-package com.jg.echodaily.core.presentation.chips
+package com.jg.echodaily.core.presentation.desingsystem.chips
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.animateContentSize
@@ -27,7 +27,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.jg.echodaily.core.presentation.theme.EchoDailyTheme
+import com.jg.echodaily.core.presentation.desingsystem.theme.EchoDailyTheme
 
 @Composable
 fun MultiChoiceChip(

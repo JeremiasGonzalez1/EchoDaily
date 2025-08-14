@@ -1,4 +1,4 @@
-package com.jg.echodaily.core.presentation.theme
+package com.jg.echodaily.core.presentation.desingsystem.theme
 
 import androidx.compose.material3.ColorScheme
 import androidx.compose.ui.graphics.Brush
