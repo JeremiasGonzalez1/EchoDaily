@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">EchoJournal</string>
+    <string name="app_name">EchoDaily</string>
     <string name="widget_title">New Entry Widget</string>
     <string name="widget_description">Create a new journal entry</string>
     <string name="title_echos">Your EchoJournal</string>
