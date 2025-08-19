@@ -24,6 +24,7 @@ import com.jg.echodaily.core.presentation.desingsystem.theme.MoodPrimary35
 import com.jg.echodaily.core.presentation.desingsystem.theme.MoodPrimary80
 import com.jg.echodaily.core.presentation.util.formatMMSS
 import com.jg.echodaily.echos.presentation.echos.models.PlaybackState
+import com.jg.echodaily.echos.presentation.echos.models.TrackSizeInfo
 import com.jg.echodaily.echos.presentation.models.MoodUI
 import kotlin.random.Random
 import kotlin.time.Duration
@@ -39,6 +40,7 @@ fun EchoMoodPlayer(
     powerRatios:List<Float>,
     onPlayClick:()->Unit,
     onPauseClick:()->Unit,
+    onTrackSizeAvailable:(TrackSizeInfo)->Unit,
     modifier:Modifier = Modifier,
     amplitudeBarWidth: Dp = 5.dp,
     amplitudeBarSpacing :Dp = 4.dp
@@ -125,7 +127,8 @@ private fun EchoMoodPlayerPreview() {
             powerRatios = ratios,
             onPlayClick = {},
             onPauseClick = {},
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(),
+            onTrackSizeAvailable = {}
         )
     }
 }
