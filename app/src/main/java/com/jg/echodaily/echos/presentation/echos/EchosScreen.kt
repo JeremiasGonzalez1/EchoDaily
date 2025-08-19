@@ -19,6 +19,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.jg.echodaily.core.presentation.desingsystem.theme.EchoDailyTheme
 import com.jg.echodaily.core.presentation.desingsystem.theme.bgGradient
 import com.jg.echodaily.echos.presentation.echos.components.EchoFilterRow
+import com.jg.echodaily.echos.presentation.echos.components.EchoList
 import com.jg.echodaily.echos.presentation.echos.components.EchosEmptyBackground
 import com.jg.echodaily.echos.presentation.echos.components.EchosRecordedFloatingActionButton
 import com.jg.echodaily.echos.presentation.echos.components.EchosTopBar
@@ -96,7 +97,18 @@ fun EchosScreen(
                     )
                 }
                 else ->{
-
+                    EchoList(
+                        sections =state.echoDaySection,
+                        onPlayClick = {
+                            onAction(EchosAction.OnPlayEchoClick(it))
+                        },
+                        onPauseClick = {
+                            onAction(EchosAction.OnPauseClick)
+                        },
+                        onTrackSizeAvailable = {trackSize ->
+                            onAction(EchosAction.OnTrackSizeAvailable(trackSize))
+                        }
+                    )
                 }
             }
         }

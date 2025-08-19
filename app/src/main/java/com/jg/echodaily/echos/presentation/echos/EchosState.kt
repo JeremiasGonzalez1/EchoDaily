@@ -5,11 +5,14 @@ import com.jg.echodaily.R
 import com.jg.echodaily.core.presentation.desingsystem.dropdowns.Selectable
 import com.jg.echodaily.core.presentation.desingsystem.dropdowns.Selectable.Companion.asUnselectedItems
 import com.jg.echodaily.core.presentation.util.UIText
+import com.jg.echodaily.echos.presentation.echos.models.EchoDaySection
 import com.jg.echodaily.echos.presentation.echos.models.EchoFilterChip
 import com.jg.echodaily.echos.presentation.echos.models.MoodChipContent
+import com.jg.echodaily.echos.presentation.models.EchoUi
 import com.jg.echodaily.echos.presentation.models.MoodUI
 
 data class EchosState(
+        val echos:Map<UIText, List<EchoUi>> = emptyMap(),
         val hasEchosRecorded :Boolean = false,
         val hasActiveTopicFilters:Boolean = false,
         val hasActiveMoodFilters:Boolean = false,
@@ -19,4 +22,10 @@ data class EchosState(
         val moodChipContent : MoodChipContent = MoodChipContent(),
         val selectedEchoFilterChip: EchoFilterChip? = null,
         val topicChipTitle: UIText = UIText.StringResource(R.string.all_topics)
-)
+){
+        val echoDaySection = echos
+                .toList()
+                .map { (dateHeader, echos) ->
+                        EchoDaySection(dateHeader, echos)
+                }
+}
